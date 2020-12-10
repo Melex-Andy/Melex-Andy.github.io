@@ -1,0 +1,212 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header { /* чтобы блок subhesder позицианировать абсолютно */ 
+    position: relative;
+    height: 50px; /* для фиксации меню */
+}
+
+nav {
+    position: fixed; /* для фиксации меню */
+    width: 100%; /* для фиксации меню */
+    height: 50px;
+    background-color: #212121;
+    z-index: 2; /* для фиксации меню */
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu .menu_link {
+    font-size: 15px;
+    /* line-height: 68px; удалить */
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.menu .menu_item { /* разделитель между ссылками */
+    border-right: 2px dotted #000000;
+    padding-right: 28px;
+}
+
+.subheader {
+    position: absolute; /* чтобы снизу была часть картинки */
+    top: 50px; /* для фиксации меню */
+    width: 100%; /* чтобы блок не сжался при абсолютном позиционировании */
+    height: 84px;
+    /* opacity: 0.6; удалить, т.к. прозрачность 60% будет задана через альфа-канал в строке ниже */
+    background-color: rgba(0,0,0, .6); 
+}
+
+.subheader .subheader_logo {
+    display: block;
+    margin-top: 16px;
+    max-width: 100%; /* на случай изменения логотипа */
+}
+
+.subheader .subheader_official {
+    margin-top: 6px;
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.subheader_call {
+    margin-top: 23px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.subheader_phone {
+    display: block;
+    margin-top: 8px;
+    text-align: right;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 12px; /* наугад, чтобы поднять выше */
+}
+
+.subheader .subheader_btn {
+    margin-top: 21px;
+    width: 178px;
+    height: 52px;
+    background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.2);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.promo {
+    min-height: 800px;
+    background: url("../img/BG_1.jpg") center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 60px;
+    margin: 0; /* чтобы перебить предустановки из reboot */
+    text-align: center;
+}
+
+.promo .promo_subheader {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 36px;
+    margin: 0; /* чтобы перебить предустановки из reboot */
+    margin-top: 22px;
+    text-align: center;
+}
+
+.promo .promo_descr {
+    margin-top: 23px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+
+.promo .promo_btn {
+    display: block;
+    margin: 118px auto 0 auto;
+    width: 265px;
+    height: 69px;
+    background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.2);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.advantage {
+    min-height: 900px;
+    padding: 71px 0 65px 0;
+}
+
+.advantage .advantage_box {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+}
+
+.advantage .advantage_box_item {
+    font-size: 11px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.advantage .advantage_8 {
+    margin-top: 38px;
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    text-align: center;
+}
+
+
+.advantage .advanage_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+
+}
+
+.advantage .advanage_wrapper .blue_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+    margin-right: 26px;
+}
+
+.advantage .advantage_descr {
+    width: 343px;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #202020;
+}
+
+.advantage .advantage_descr span {
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #1eacc7;
+}
+
