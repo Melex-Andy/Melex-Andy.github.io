@@ -1,0 +1,212 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative; /* чтобы subheader можно было спозиционировать абсолютно, для наложения одного фона на другой */
+    height: 50px; /* ***** липкое меню */
+}
+
+nav {
+    height: 51px;
+    background-color: #212121;
+    position: fixed; /* ***** липкое меню */
+    width: 100%; /* ***** липкое меню */
+    z-index: 2; /* ***** липкое меню */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px; /* указал pd чтобы можно было нарисовать при помощи border боковые линии */
+    margin: 0; /* обнулить mg полученные из reboot */
+    list-style-type: none; /* удалить маркеры у списка */
+}
+
+.menu .menu_link {
+    font-size: 15px;
+    font-weight: 300;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu .menu_item { /* чтобы нарисовать вертикальные черточки */
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+
+.subheader {
+    position: absolute; /* чтобы нижняя секция "наезжала" под этот блок */
+    width: 100%;/*  чтобы при абсолютном позиционировании элемент занял всю ширину */
+    height: 84px;
+    /* opacity: 0.6; удалить, т.к. прозрачность будет и у всех элементов внутри блока */
+    background-color: rgba(0,0,0, .6); /* переписываем значение в rgba кодироке, чтобы задать прозрачность только фону */
+    top: 50px; /* ***** липкое меню */
+}
+
+.subheader .subheader_logo {
+    display: block;
+    max-width: 100%; /* ограничеваем максимальную ширину, на случай изменения логотипа */ 
+    margin-top: 16px;
+}
+
+.subheader .subheader_official {
+    margin-top: 6px;
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.subheader .subheader_call {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.subheader .subheader_phone {
+    display: block;
+    text-align: right;
+    margin-top: 8px;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 12px; /* ставим на глаз, чтобы поднять номер выше */
+}
+
+.subheader .subheader_btn {
+    margin-top: 19px;
+    width: 178px;
+    height: 48px;
+    background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+    border: none; /* отключаем свойство, т.к. выглядит криво */
+    border-radius: 4px; /* добавляем скругление */
+    box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.11);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    color: #ffffff;
+}
+
+.promo {
+    min-height: 800px;
+    background: url("../img/bg/bg_1.jpg") center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+}
+
+.promo .promo_header {
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+    margin: 0;
+}
+
+.promo .promo_subheader {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 22px;
+}
+
+.promo .promo_desr {
+    margin-top: 23px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+
+.promo .promo_btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 115px;
+    width: 265px;
+    height: 62px;
+    background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+    border: none; /* ставим none */
+    box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.11);
+    border-radius: 4px; /* добавляем */
+    line-height: 68px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    color: #ffffff;
+}
+
+.reason {
+    min-height: 906px;
+    padding: 71px 0 68px 0;
+}
+
+.reason .label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 11px;
+    font-weight: 100;
+    text-transform: uppercase;    
+}
+
+.reason .title {
+    text-align: center;
+    margin-top: 38px;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    line-height: 40px;
+}
+
+.reason .reason_descr {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.reason .reason_round {
+    margin-left: 35px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reason .reason_text {
+    width: 341px;
+    /* min-height: 142px; нужно скрыть, тогда круги станут напротив текста справа */
+    margin-left: 26px;    
+    line-height: 21px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #202020;
+    text-align: justify
+
+}
+
+.reason .reason_text span {
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #1eacc7;
+}
