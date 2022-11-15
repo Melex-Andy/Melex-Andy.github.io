@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* button {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.2rem;
+}
+
+.element {
+    margin-top: 20px;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: blueviolet;
+    font-size: 1.2rem;
+}
+
+.hide {
+    display: none;
+} */
+
+
+/* Упражнение 33 (02) */
+/* .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+} */
+
+/* .active, .accordion:hover {
+  background-color: #ccc;
+} */
+
+/* .panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+} */
+/* .panel.show {
+    display: block;
+} */
+
+
+
+/* Список дел */
+body {
+  background-color: #ffc4ff;
+}
+
+section {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;  
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+div {  
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  padding-left: 10px;
+  width: 200px;
+  height: 20px;
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 25px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  width: 300px;
+  margin-top: 25px;
+  min-height: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+li {
+  width: 250px;
+  margin-top: 10px;
+  margin-left: 10px;
+  list-style-type: none;  
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.btn-remove {
+  margin-right: 10px;
+  line-height: 25px; 
+  font-size: 32px; 
+}
+
+li:hover {
+  cursor: pointer;  
+}
